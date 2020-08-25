@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+        <div class="preloader">
+                <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="currentColor"
+                    d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+                  </path>
+                </svg>
+              </div>
+        <div class="wrapper">
+                <section class="first-screen">
+                    <div class="first-screen__body">
+                        <header>
+                            <div class="logo">
+                                <a class="logo__link" href="index.html">
+                                    <div class="logo__title">A&L</div>
+                                    <div class="logo__text">natural skincare</div>
+                                </a>                   
+                            </div>
+                                          
+                        </header>
+
+                        <section class="client-form">
+                            <div class="client-form__header">
+                                <h2 class="client-form__header__title">Make your perfect skincare by yourself!</h2>
+                                <p class="client-form__header__text">Create you personal skincare with us, only NATURAL components</p>
+                                <p class="client-form__header__subtext"><span class="main__red">*</span> Обезательно</p>
+                            </div>
+
+                       
+                            <form  action="https://formspree.io/jedix1488@gmail.com" method="POST">
+                                  
+                                    <input type="text" name="_gotcha" style="display:none" />
+
+                                    <div class="client-form__item">
+                                        <p class="client-form__item__title">Skin type <span class="main__red">*</span></p>                              
+                                        <p>
+                                            <input id="Dry" required type="radio" name="Skin__type" value="Dry"/>
+                                            <label for="Dry">Dry</label></p>
+                                        <p>
+                                            <input id="Normal" required type="radio" name="Skin__type" value="Normal"/>
+                                            <label for="Normal">Normal</label></p>
+                                        <p>
+                                            <input id="Oily" required type="radio" name="Skin__type" value="Oily"/>
+                                            <label for="Oily">Oily</label></p>
+                                    </div>
+                                        
+                                    <div class="client-form__item">
+                                       <p class="client-form__item__title">Type of product <span class="main__red">*</span></p> 
+                                    
+                                       <p>
+                                            <input id="hand__cream" required type="radio" name="Type-of-product" value="hand__cream"/>
+                                           <label for="hand__cream">hand cream</label></p>
+                                       <p>
+                                            <input id="body__lotion" required type="radio" name="Type-of-product" value="body__lotion"/>
+                                           <label for="body__lotion">body lotion</label></p>
+                                    </div>
+
+                                    <div class="client-form__item">
+                                        <p class="client-form__item__title">Do you have allergies? <span class="main__red">*</span></p> 
+                                       
+                                        <p>
+                                            <input id="any-allergies-yes" required type="radio" name="any-allergies" value="yes"/>
+                                            <label for="any-allergies-yes">yes</label></p>
+                                        <p>
+                                            <input id="any-allergies-no" required type="radio" name="any-allergies" value="no"/>
+                                            <label for="any-allergies-no">no</label></p>
+                                    </div>
+
+                                    <!-- <div class="client-form__item">
+                                        <p class="client-form__item__title">If you have allergies, please specify</p>
+                                       
+                                        <p><label><input class="user__textarea" type="text" name="allergies" placeholder="Мой ответ"/></label></p>
+                                    </div> -->
+
+                                    <div class="client-form__item">
+                                        <p class="client-form__item__title">Result I would like to see on my skin <span class="main__red">*</span></p>
+                                        
+                                        <p>
+                                            <input id="soothing" required type="radio" name="Result__I__would__like__to__see__on__my__skin" value="soothing"/>
+                                            <label for="soothing">soothing</label></p>
+                                        <p>
+                                            <input id="moisturizing" required type="radio" name="Result__I__would__like__to__see__on__my__skin" value="moisturizing"/>
+                                            <label for="moisturizing">moisturizing</label></p>
+                                        <p>
+                                            <input id="protecting" required type="radio" name="Result__I__would__like__to__see__on__my__skin" value="protecting"/>
+                                            <label for="protecting">protecting</label></p>
+                                 </div>
+
+                                 <div class="client-form__item">
+                                    <p class="client-form__item__title">Cream structure <span class="main__red">*</span></p>
+                                   
+                                    <p>
+                                        <input id="liquid" required type="radio" name="Cream__structure" value="liquid"/>
+                                        <label for="liquid">liquid</label>
+                                    </p>
+
+                                    <p>
+                                        <input id="medium" required type="radio" name="Cream__structure" value="medium"/>
+                                        <label for="medium">medium</label></p>
+                                    <p>
+                                        <input id="thick" required type="radio" name="Cream__structure" value="thick"/>
+                                        <label for="thick">thick</label></p>
+                             </div>
+
+                             <div class="client-form__item">
+                                <p class="client-form__item__title">Base oil</p>
+
+                                <p>
+                                    <input type="checkbox" id="Shea__butter" name="Base__oil" value="Shea__butter">
+                                    <label for="Shea__butter">Shea butter</label>
+                                </p>
+
+                                <p>
+                                    <input type="checkbox" id="Avocado__oil" name="Base__oil" value="Avocado__oil">
+                                    <label for="Avocado__oil">Avocado oil</label>
+                                </p>
+                                <p>
+                                    <input  type="checkbox" id="Argan__oil" name="Base__oil" value="Argan__oil">
+                                    <label for="Argan__oil">Argan oil</label>
+                                </p>
+                                <p>
+                                    <input  type="checkbox" id="Olive__oil" name="Base__oil" value="Olive__oil">
+                                    <label for="Olive__oil">Olive oil</label>
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="Coconut__oil" name="Base__oil" value="Coconut__oil">
+                                    <label for="Coconut__oil">Coconut oil</label>
+                                </p>
+                        </div>
+
+
+
+                        <div class="client-form__item">
+                            <p class="client-form__item__title">Essential oil</p>
+
+                            <p>
+                                <input type="checkbox" id="Rose" name="Essential__oil" value="Rose">
+                                <label for="Rose">Rose</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="Ginger" name="Essential__oil" value="Ginger">
+                                <label for="Ginger">Ginger</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="Lavender" name="Essential__oil" value="Lavender">
+                                <label for="Lavender">Lavender</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="Lemon" name="Essential__oil" value="Lemon">
+                                <label for="Lemon">Lemon</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="Chamomile" name="Essential__oil" value="Chamomile">
+                                <label for="Chamomile">Chamomile</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="Aloe__vera" name="Essential__oil" value="Aloe__vera">
+                                <label for="Aloe__vera">Aloe vera</label>
+                            </p>
+                    </div>
+
+                    <div class="client-form__item">
+                        <p class="client-form__item__title">To finish...<span class="main__red">*</span></p>
+                       
+                        <p>
+                            <input id="confirm" required type="radio" name="To__finish" value="confirm"/>
+                            <label for="confirm">I aware that individual components might give allergic reaction</label></p>
+                 </div>
+
+                                   
+
+                                    <!-- your other form fields go here -->
+
+                                    <button class="btn__finish" type="submit">Send</button>
+                            </form>
+                       
+                        </section>
+        
+                        
+                    </div>  
+                </section>  
+            </div>
+        
+   
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> 
+            <script src="js/wow.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="js/js.js"></script>       
+            
+          
+</body>
+</html>
